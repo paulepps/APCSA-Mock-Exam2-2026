@@ -12,8 +12,8 @@ public class FourDigitInteger {
 
     public boolean isPalindrome() {
         String strValue = Integer.toString(this.value);
-        String reversedStrValue = new StringBuilder(strValue).reverse().toString();
-        return strValue.equals(reversedStrValue);
+        return strValue.charAt(0) == strValue.charAt(3) 
+                && strValue.charAt(1) == strValue.charAt(2);
     }
 
     public boolean isPerfectSquare() {
