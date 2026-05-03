@@ -6,8 +6,8 @@ public class Matrix {
     }
 
     public void reverseAllRows() {
-        for (int i = 0; i < mat.length; i++) {
-            ArrayUtil.reverseArray(mat[i]);
+        for (int[] row : mat) {
+            ArrayUtil.reverseArray(row);
         }
     }
 
